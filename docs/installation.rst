@@ -70,3 +70,23 @@ With Docker
 
     $ docker-compose build -t spider .
     $ docker-compose up spider
+
+-------------------
+Client installation
+-------------------
+
+::
+
+    $ cmake -Dtarget=client .
+    $ make
+    $ ./spider_client {ServeurHost} {ServerPort}
+
+
+--------------------
+Modules installation
+--------------------
+
+(On Windows)
+Use cmake with the following options::
+
+    $ cmake -Dtarget=modules .
