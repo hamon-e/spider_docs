@@ -38,16 +38,35 @@ Otherwise use a service like Let's Encrypt.::
     $ openssl rsa -in server.key.org -out server.key
     $ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
-^^^^^^^^
-Building
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+Building and Running
+^^^^^^^^^^^^^^^^^^^^
+
+To compile the project follow the following directives.
 
 """"""""
 Manually
 """"""""
 
+In order to compile this server you need
+
+* Boost
+* MongoDB CXX Driver
+
+And obviously to run it you need mongodb
+
+::
+
+    $ cmake -Dtarget=server .
+    $ make
+    $ ./spider_server
 
 
 """""""""""
 With Docker
 """""""""""
+
+::
+
+    $ docker-compose build -t spider .
+    $ docker-compose up spider
