@@ -2,6 +2,8 @@
 Installation
 ============
 
+.. highlight:: console
+
 -------------------
 Server installation
 -------------------
