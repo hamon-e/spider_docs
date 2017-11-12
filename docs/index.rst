@@ -9,9 +9,11 @@ Welcome to the_spider's documentation!
 .. toctree::
    :maxdepth: 2
 
+   presentation
    installation
-
-
+   configuration
+   protocol
+   api
 
 Indices and tables
 ==================
