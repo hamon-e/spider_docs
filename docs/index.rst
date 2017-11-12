@@ -14,6 +14,7 @@ Welcome to the_spider's documentation!
    configuration
    protocol
    api
+   modules
 
 Indices and tables
 ==================
